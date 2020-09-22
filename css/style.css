@@ -1,0 +1,81 @@
+html, body {
+	height: 100%;
+	font-family: "Cabin", sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;/*Ширина и высота элемнтов будут считаться внутри*/
+}
+a{
+    text-decoration: none;/*Убирает подчеркивание*/
+    display: inline;/*Чтобы было в линию*/
+}
+ul,li{
+    list-style: none;/*Убирает маркеры*/
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1140px;/*Если будет меньше чем это число то нижний скрол*/
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body{
+    font-size: 16px;
+}
+
+.header_top{
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+.header_language , .header_vk_btn, .header_github_btn {
+    float: right;
+    margin: 10px;
+    color: black;
+}
+.header_language img{
+    height: 26px;
+	width: 26px;
+	border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.header-par::after{
+    content: "";
+    clear: both;
+    display: block;
+
+}
+
+.header_email{
+    color: black;
+    letter-spacing: 0.25px;
+    line-height: 45px;
+}
+.header_down{
+    padding: 34px 10px 23px;
+}
+.header_down_parent{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.menu li{
+    display: inline-block;
+    margin: 10px;
+}
+.menu a{
+    color: black;
+}
+.menu li a.active{
+    border-bottom: 2px solid #dfa974;
+    position: relative;
+    
+
+    
+}
+
